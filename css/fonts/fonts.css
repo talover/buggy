@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'UniSansHeavyCaps';
+    src: url('unisansheavy.eot');
+    src: url('unisansheavy.eot') format('embedded-opentype'),
+         url('unisansheavy.woff2') format('woff2'),
+         url('unisansheavy.woff') format('woff'),
+         url('unisansheavy.ttf') format('truetype'),
+         url('unisansheavy.svg#UniSansHeavyCaps') format('svg');
+}
+
+@font-face {
+    font-family: 'UniSansHeavyCapsItalic';
+    src: url('uni-sans-heavy-italic.eot');
+    src: url('uni-sans-heavy-italic.eot') format('embedded-opentype'),
+         url('uni-sans-heavy-italic.woff') format('woff'),
+         url('uni-sans-heavy-italic.ttf') format('truetype'),
+         url('uni-sans-heavy-italic.svg#UniSansHeavyCapsItalic') format('svg');
+}
+@font-face {
+    font-family: 'als_rublregular';
+    src: url('rouble-webfont.eot');
+    src: url('rouble-webfont.eot?#iefix') format('embedded-opentype'),
+         url('rouble-webfont.woff2') format('woff2'),
+         url('rouble-webfont.woff') format('woff'),
+         url('rouble-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
