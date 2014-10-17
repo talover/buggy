@@ -56,14 +56,18 @@ $(document).ready(function(){
 		$(tab).addClass('active');
 	});
 
-	$('#catalog-view a').click(function(e){
+	$('#catalog-view a.line').click(function(e){
 		e.preventDefault();
 
-		var tab = $(this).data('tab');
+		$(this).addClass('active').parent().siblings().find('a').removeClass('active');
+		$('#catalog-list').addClass('line');
+	});
+
+	$('#catalog-view a.block').click(function(e){
+		e.preventDefault();
 
 		$(this).addClass('active').parent().siblings().find('a').removeClass('active');
-		$('.catalog-view').removeClass('active');
-		$(tab).addClass('active');
+		$('#catalog-list').removeClass('line');
 	});
 
 	/* -- .go-top --*/
