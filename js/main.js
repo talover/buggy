@@ -93,4 +93,15 @@ $(document).ready(function(){
 	});
 	
 	$('#sorting li a').click(function(e){e.preventDefault();});
+
+	/* -- popup -- */
+
+	$('.popup-btn').fancybox({
+		padding: 0,
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
 });
