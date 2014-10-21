@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 	/* -- main-slider --*/
 	var owl_main = $("#main-slider"),
-		deal_slider = $('#beast-deals');
+		slider = $('#beast-deals,.product-slider');
 
 	owl_main.owlCarousel({
 		slideSpeed: 1500,
@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 	});
 
-	deal_slider.owlCarousel({
+	slider.owlCarousel({
 		slideSpeed: 1000,
 		paginationSpeed: 1000,
 		rewindSpeed: 1000,
@@ -104,4 +104,26 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+	$('.photo-popup-btn').fancybox({
+		padding: 0,
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		},
+		wrapCSS : 'photo-popup' 
+	});
+
+	$('.video-popup-btn').fancybox({
+		padding: 0,
+		helpers: {
+			overlay: {
+				locked: false
+			},
+			media : {}
+		},
+		wrapCSS : 'photo-popup' 
+	});
 });
+
