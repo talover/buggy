@@ -125,5 +125,40 @@ $(document).ready(function(){
 		},
 		wrapCSS : 'photo-popup' 
 	});
+
+	$(".order-btn").click(function() {
+   		$.fancybox( {
+   			href : '#processed-order', 
+   			padding : 0, 
+
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			}
+   		} );
+  	});
+
+	/* -- number --*/
+
+	$('.number a.up').click(function(){
+		var num = $(this).siblings('.number input[type="text"]').val();
+
+		$(this).siblings('.number input[type="text"]').val(parseInt(num) + 1);
+	});
+
+	$('.number a.down').click(function(){
+		var num = $(this).siblings('.number input[type="text"]').val();
+
+		if(num > 1) {
+			$(this).siblings('.number input[type="text"]').val(parseInt(num) - 1);
+		}else {
+			num =1;
+		}
+	});
+
+	/* -- form styler -- */
+
+	$('input, select').styler(); 
 });
 
