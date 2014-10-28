@@ -160,5 +160,13 @@ $(document).ready(function(){
 	/* -- form styler -- */
 
 	$('input, select').styler(); 
+
+	/* -- acardion in faq --*/
+
+	$('.acardion-btn').click(function(e){
+		e.preventDefault();
+		$(this).siblings('div').slideToggle();
+		$(this).parents('li').siblings().find('div').slideUp();
+	});
 });
 

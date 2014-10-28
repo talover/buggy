@@ -192,24 +192,6 @@ ul {
     border-radius: @a @b @c @d;
 }
 
-.placeholder(@content) {
-    &::-webkit-input-placeholder {
-        @content();
-    }
-
-    &:-moz-placeholder { /* Firefox 18- */
-        @content();
-    }
-
-    &::-moz-placeholder {  /* Firefox 19+ */
-        @content();
-    }
-
-    &:-ms-input-placeholder {  
-        @content();
-    }
-}
-
 .main-container {
     margin: auto;
     width: 980px;
@@ -3397,6 +3379,14 @@ ul {
                 font-style: italic;
                 font-size: 9pt;
                 padding-top: 10px;
+
+                i {
+                    color: #000;
+                }
+
+                span {
+                    color: #fe9600;
+                }
             }
         }
 
@@ -3428,6 +3418,86 @@ ul {
         margin: 0;
         font-size: 10.5pt;
     }
+}
+
+#faq {
+    .main-title {
+        text-align: left;
+        padding-bottom: 22px;
+    }
+
+    p {
+        margin: 0;
+        color: #848484;
+        font-size: 10.5pt;
+    }
+
+    .ordering {
+        border-bottom: 1px solid #d7d8d8;
+        -webkit-box-shadow: inset 0 -2px 0 0 #e2e2e2;
+        -moz-box-shadow:    inset 0 -2px 0 0 #e2e2e2;
+        box-shadow:         inset 0 -2px 0 0 #e2e2e2;
+
+        form {
+            margin-bottom: 45px;
+        }
+
+        .row {
+            .hint {margin-top: -5px;}
+
+            textarea {
+                font-size: 10pt;
+            }
+        } 
+    }
+}
+
+.acardion {
+    border-top: 1px solid #d7d8d8;
+    border-bottom: 1px solid #d7d8d8;
+    -webkit-box-shadow: inset 0 2px 0 0 #e2e2e2,inset 0 -2px 0 0 #e2e2e2;
+    -moz-box-shadow:    inset 0 2px 0 0 #e2e2e2,inset 0 -2px 0 0 #e2e2e2;
+    box-shadow:         inset 0 2px 0 0 #e2e2e2,inset 0 -2px 0 0 #e2e2e2;
+    margin-top: 36px;
+    padding: 42px 0 30px 0;
+
+    ul {
+        padding-top: 14px;
+
+        li {
+            padding-bottom: 11px;
+
+            .acardion-btn {
+                color: #f08303;
+                font-weight: bold;
+                text-decoration: none;
+                border-bottom: 1px dashed #f8c7a3;
+                font-size: 12pt;
+                letter-spacing: 0.44px;
+
+                &:hover {
+                    border-color:#fff;
+                }
+            }
+
+            div {
+                display: none;
+                padding-top: 6px;
+            }
+        }
+    }
+}
+
+.third-title {
+    font-family: @bold-font;
+    font-size: 13pt;
+    color: #626262;
+    margin: 0;
+    letter-spacing: -0.3px;  
+}
+.coments-block {
+    padding-top: 35px;
+
 }
 /* -- media --*/
 @media(max-width:1150px)  {
