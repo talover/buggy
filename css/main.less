@@ -3497,6 +3497,57 @@ ul {
 }
 .coments-block {
     padding-top: 35px;
+    padding-bottom: 56px;
+
+    & > ul > li:first-child {border-top:0;}
+
+    ul {
+        padding: 2px 0 0 0;
+
+        li {
+            overflow: hidden;
+            padding: 18px 0 0 0;
+            border-top: 1px solid #d7d8d8;
+
+            ul {
+                padding-left: 52px;
+
+                li {
+                    border-top: 1px dotted #d7d8d8;
+                }
+            }
+
+            .img-block {
+                float: left;
+                width: 38px;
+                height: 38px;
+                overflow: hidden;
+            }
+
+            .text-block {
+                width: auto;
+                margin: 0 0 14px 52px;
+                padding: 10px 0 0 0;
+
+                .name {
+                    font-size: 12pt;
+                    margin: 0 5px 0 0;
+                    letter-spacing: 0.3px;
+                    .display-inline;
+                    margin-bottom: 9px;
+                }
+
+                .day {
+                    color: #fff;
+                    font-size: 10.5pt;
+                    background: #fe9600;
+                    display: inline-block;
+                    line-height: 22px;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
 
 }
 /* -- media --*/

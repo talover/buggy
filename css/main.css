@@ -3431,6 +3431,12 @@ ul li {
   font-size: 9pt;
   padding-top: 10px;
 }
+.ordering form .row .hint i {
+  color: #000;
+}
+.ordering form .row .hint span {
+  color: #fe9600;
+}
 .ordering form ul {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -3453,6 +3459,115 @@ ul li {
 #processed-order p {
   margin: 0;
   font-size: 10.5pt;
+}
+#faq .main-title {
+  text-align: left;
+  padding-bottom: 22px;
+}
+#faq p {
+  margin: 0;
+  color: #848484;
+  font-size: 10.5pt;
+}
+#faq .ordering {
+  border-bottom: 1px solid #d7d8d8;
+  -webkit-box-shadow: inset 0 -2px 0 0 #e2e2e2;
+  -moz-box-shadow: inset 0 -2px 0 0 #e2e2e2;
+  box-shadow: inset 0 -2px 0 0 #e2e2e2;
+}
+#faq .ordering form {
+  margin-bottom: 45px;
+}
+#faq .ordering .row .hint {
+  margin-top: -5px;
+}
+#faq .ordering .row textarea {
+  font-size: 10pt;
+}
+.acardion {
+  border-top: 1px solid #d7d8d8;
+  border-bottom: 1px solid #d7d8d8;
+  -webkit-box-shadow: inset 0 2px 0 0 #e2e2e2, inset 0 -2px 0 0 #e2e2e2;
+  -moz-box-shadow: inset 0 2px 0 0 #e2e2e2, inset 0 -2px 0 0 #e2e2e2;
+  box-shadow: inset 0 2px 0 0 #e2e2e2, inset 0 -2px 0 0 #e2e2e2;
+  margin-top: 36px;
+  padding: 42px 0 30px 0;
+}
+.acardion ul {
+  padding-top: 14px;
+}
+.acardion ul li {
+  padding-bottom: 11px;
+}
+.acardion ul li .acardion-btn {
+  color: #f08303;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px dashed #f8c7a3;
+  font-size: 12pt;
+  letter-spacing: 0.44px;
+}
+.acardion ul li .acardion-btn:hover {
+  border-color: #fff;
+}
+.acardion ul li div {
+  display: none;
+  padding-top: 6px;
+}
+.third-title {
+  font-family: 'UniSansHeavyCaps';
+  font-size: 13pt;
+  color: #626262;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+.coments-block {
+  padding-top: 35px;
+  padding-bottom: 56px;
+}
+.coments-block > ul > li:first-child {
+  border-top: 0;
+}
+.coments-block ul {
+  padding: 2px 0 0 0;
+}
+.coments-block ul li {
+  overflow: hidden;
+  padding: 18px 0 0 0;
+  border-top: 1px solid #d7d8d8;
+}
+.coments-block ul li ul {
+  padding-left: 52px;
+}
+.coments-block ul li ul li {
+  border-top: 1px dotted #d7d8d8;
+}
+.coments-block ul li .img-block {
+  float: left;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+}
+.coments-block ul li .text-block {
+  width: auto;
+  margin: 0 0 14px 52px;
+  padding: 10px 0 0 0;
+}
+.coments-block ul li .text-block .name {
+  font-size: 12pt;
+  margin: 0 5px 0 0;
+  letter-spacing: 0.3px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 9px;
+}
+.coments-block ul li .text-block .day {
+  color: #fff;
+  font-size: 10.5pt;
+  background: #fe9600;
+  display: inline-block;
+  line-height: 22px;
+  padding: 0 5px;
 }
 @media (max-width: 1150px) {
   #main-slider .owl-controls .owl-buttons div.owl-prev {
