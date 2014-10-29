@@ -21,7 +21,7 @@ html {
 body {
   font-family: 'PT Sans', sans-serif;
   font-size: 11pt;
-  min-width: 1000px;
+  min-width: 1100px;
   color: #222c2c;
   background: #fff;
   height: 100%;
@@ -3568,6 +3568,209 @@ ul li {
   display: inline-block;
   line-height: 22px;
   padding: 0 5px;
+}
+#contacts .main-title {
+  text-align: left;
+  padding-bottom: 25px;
+}
+#contacts .third-title {
+  letter-spacing: 0.3px;
+  font-size: 12pt;
+}
+#contacts .main-info .f-left {
+  width: 52%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+#contacts .main-info .f-right {
+  width: 48%;
+}
+#contacts .main-info .f-right img {
+  width: 100%;
+}
+#contacts .main-info .third-title {
+  padding: 25px 0 16px 0;
+}
+#contacts .main-info p {
+  color: #848484;
+  font-size: 10.5pt;
+  margin: 0;
+  padding-bottom: 9px;
+}
+#contacts .main-info p b {
+  text-transform: uppercase;
+  color: #262f2f;
+}
+#contacts .baggy-list {
+  overflow: hidden;
+  margin: 0 -10px 0 -10px;
+  padding-top: 19px;
+}
+#contacts .baggy-list li {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 25%;
+}
+#contacts .baggy-list li a {
+  display: block;
+}
+#contacts .baggy-list li a img {
+  width: 100%;
+}
+#contacts .requisites {
+  padding: 43px 0 0 0;
+}
+#contacts .requisites ul {
+  overflow: hidden;
+  margin: 20px 0 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 23px 15px 12px 15px;
+  border: 3px solid #fe9600;
+}
+#contacts .requisites ul li {
+  float: left;
+  width: 33.3%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+#contacts .requisites ul li p {
+  color: #848484;
+  font-size: 10.5pt;
+  margin: 0;
+  padding-bottom: 9px;
+}
+#contacts .requisites ul li p b {
+  text-transform: uppercase;
+  color: #262f2f;
+}
+#contacts .adress-block {
+  overflow: hidden;
+  padding: 38px 0;
+  margin-top: 41px;
+  border-top: 1px solid #d7d8d8;
+  border-bottom: 1px solid #d7d8d8;
+  -webkit-box-shadow: inset 0 2px 0 0 #e2e2e2, inset 0 -2px 0 0 #e2e2e2;
+  -moz-box-shadow: inset 0 2px 0 0 #e2e2e2, inset 0 -2px 0 0 #e2e2e2;
+  box-shadow: inset 0 2px 0 0 #e2e2e2, inset 0 -2px 0 0 #e2e2e2;
+}
+#contacts .adress-block li {
+  float: left;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contacts .adress-block li .third-title {
+  padding-bottom: 20px;
+}
+#contacts .adress-block li:first-child {
+  padding-right: 50px;
+}
+#contacts .adress-block li:first-child + * {
+  padding-left: 50px;
+}
+#contacts .adress-block li .text-block {
+  margin: 0 220px 0 0;
+}
+#contacts .adress-block li p {
+  color: #848484;
+  font-size: 10.5pt;
+  margin: 0;
+  padding-bottom: 9px;
+}
+#contacts .adress-block li p b {
+  text-transform: uppercase;
+  color: #262f2f;
+}
+#contacts .adress-block li p span {
+  color: #262f2f;
+  font-size: 12pt;
+}
+#contacts .map-block {
+  margin-top: 41px;
+}
+#contacts .ordering {
+  border-top: 1px solid #d7d8d8;
+  -webkit-box-shadow: inset 0 2px 0 0 #e2e2e2;
+  -moz-box-shadow: inset 0 2px 0 0 #e2e2e2;
+  box-shadow: inset 0 2px 0 0 #e2e2e2;
+  margin-top: 40px;
+  padding-top: 39px;
+}
+#contacts .ordering .row textarea {
+  font-size: 10pt;
+}
+#contacts .ordering .row .hint {
+  margin-top: -5px;
+}
+#contacts .ordering .row.massage {
+  position: relative;
+}
+#contacts .ordering .row.massage .massage-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  min-height: 40px;
+  width: 300px;
+}
+#contacts .ordering .row.massage .massage-block .hint {
+  margin: 0;
+  padding: 0 30px 0 0;
+  text-align: left;
+}
+#contacts .ordering .row.massage .massage-block .close {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  background-image: url("images/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: -246px -57px;
+  width: 12px;
+  height: 12px;
+}
+#map {
+  width: 100%;
+  height: 556px;
+  margin-top: 27px;
+}
+.my-hint {
+  display: inline-block;
+  padding: 5px;
+  height: 55px;
+  position: relative;
+  left: -10px;
+  width: 195px;
+  font-size: 11px;
+  line-height: 17px;
+  color: #333333;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #faefb6;
+  border: 1px solid #CDB7B5;
+  border-radius: 20px;
+  font-family: Arial;
 }
 @media (max-width: 1150px) {
   #main-slider .owl-controls .owl-buttons div.owl-prev {

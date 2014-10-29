@@ -168,5 +168,11 @@ $(document).ready(function(){
 		$(this).siblings('div').slideToggle();
 		$(this).parents('li').siblings().find('div').slideUp();
 	});
+
+	/* -- massage-block --*/
+	$('.massage-block .close').click(function(e){
+		e.preventDefault();
+		$(this).parents('.massage-block').fadeOut();
+	});
 });
 

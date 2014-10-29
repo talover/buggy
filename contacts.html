@@ -17,6 +17,67 @@
 		<link rel="stylesheet/less" type="text/css" href="css/main.less">
 		<script src="js/vendor/less.js" type="text/javascript"></script>
  -->
+		<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+		<script type="text/javascript">
+			ymaps.ready(init);
+
+			function init () {
+			    var myMap = new ymaps.Map("map", {
+			            center: [55.76, 37.64],
+			            zoom: 9
+			        }),
+	
+			        HintLayout = ymaps.templateLayoutFactory.createClass( "<div class='my-hint'>" +
+			            "<b>{{ properties.object }}</b><br />" +
+			            "{{ properties.address }}" +
+			            "</div>", {
+			                getShape: function () {
+			                    var el = this.getElement(),
+			                        result = null;
+			                    if (el) {
+			                        var firstChild = el.firstChild;
+			                        result = new ymaps.shape.Rectangle(
+			                            new ymaps.geometry.pixel.Rectangle([
+			                                [0, 0],
+			                                [firstChild.offsetWidth, firstChild.offsetHeight]
+			                            ])
+			                        );
+			                    }
+			                    return result;
+			                }
+			            }
+			        );
+
+			    var myPlacemark = new ymaps.Placemark([55.8978,37.4998], {
+			        address: "Москва, МКАД, 78 км, д. 14, корп. 1",
+			        object: "Наш магазин. В торговом центре 'Декстер'."
+			    }, {
+			        hintLayout: HintLayout,
+		            iconLayout: 'default#image',
+		            iconImageHref: 'img/ball.png',
+		            iconImageSize: [47, 48],
+		            iconImageOffset: [-10, -50]
+			    });
+			    
+
+			    var myPlacemark2 = new ymaps.Placemark([55.6718,37.6207], {
+			        address: "Москва Варшавское шоссе д. 42",
+			        object: "Наш офис."
+			    }, {
+			        hintLayout: HintLayout,
+		            iconLayout: 'default#image',
+		            iconImageHref: 'img/ball.png',
+		            iconImageSize: [47, 48],
+		            iconImageOffset: [-10, -50]
+			    });
+
+
+			    myMap.geoObjects.add(myPlacemark);
+			    myMap.geoObjects.add(myPlacemark2);
+			}
+		</script>
+
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -227,64 +288,112 @@
 				</div>
 			</header>
 
-			<section id="faq" class="main-container">
-				<h2 class="main-title">Вопрос-ответ</h2>
-				<p>
-					Специалисты нашей компании постараются в кратчайшие сроки решить любую Вашу проблему. Все сообщения проходят процедуру модерации и появляются на сайте после обработки администрацией в течение 24 часов после написания.
-				</p>
+			<section id="contacts" class="main-container">
+				<h2 class="main-title">Контакты</h2>
+				<div class='main-info clearfix'>
+					<div class="f-left">
+						<h3 class="third-title">МАгазин «BuggYMotor» в Москве</h3>
+						<p>
+							<b>Адрес:</b><br/> Москва, МКАД, 78 км, д. 14, корп. 1
+						</p>	
 
-				<div class="acardion">
-					<h3 class="third-title ">Часто задаваемые вопросы</h3>
+						<p>
+							<b>Как проехать:</b><br/>На автомобиле: МКАД, 78 км, внутренняя сторона, справа от развязки МКАД с Коровинским ш. (между Ленинградским и Дмитровским ш. ориентир - «Техника для активного отдыха»)
+						</p>
+						<p>
+							<b>ОКПО:</b> 65322163 / <b>ОКАТО:</b> 45296590000 / <b>ОКТМО:</b> 45923000
+						</p>
+						<p>
+							<b>Отдел продаж:</b><br/>(495) 646-49-45
+						</p>
+						<p>
+							<b>E-mail:</b><br/>Sales@Buggy-Motor.ru
+						</p>
+					</div>
+					<div class="f-right">
+						<img src="img/pic-34.png" alt="">
+					</div>
+				</div>
+
+				<ul class="baggy-list">
+					<li>
+						<a href="img/pic-35.png" data-fancybox-group="group2" class="photo-popup-btn">
+							<img src="img/pic-35.png" alt="">
+						</a>
+					</li>
+
+					<li>
+						<a href="img/pic-36.png" data-fancybox-group="group2" class="photo-popup-btn">
+							<img src="img/pic-36.png" alt="">
+						</a>
+					</li>
+
+					<li>
+						<a href="img/pic-37.png" data-fancybox-group="group2" class="photo-popup-btn">
+							<img src="img/pic-37.png" alt="">
+						</a>
+					</li>
+
+					<li>
+						<a href="img/pic-38.png" data-fancybox-group="group2" class="photo-popup-btn">
+							<img src="img/pic-38.png" alt="">
+						</a>
+					</li>
+				</ul>
+
+				<div class="requisites">
+					<h3 class="third-title">Реквизиты Головной компании</h3>
+
 					<ul>
 						<li>
-							<a class="acardion-btn" href="#">В какие регионы России осуществляется доставка техники?</a>
-							<div>
-								<p>
-									Доставка техники осуществляется по всей России в любой населенный пункт. При этом у нас действует акция по бесплатной доставке квадроциклов и снегоходов до двери в пределах 300км от МКАД. При покупке мотоциклов и скутеров бесплатная доставка по Москве в пределах МКАД, далее 28 руб/км.
-								</p>
-							</div>
+							<p><b>ООО «Группа Инновационного Развития»</b></p>
+							<p><b>ОГРН:</b> 1137746498240</p>
+							<p><b>ИНН:</b> 7715966229 / КПП: 771501001</p>
+							<p><b>ОКПО:</b> 17690919 / <b>ОКАТО:</b> 45280574000 /</p>
+							<p><b>ОКТМО:</b> 45359000 / <b>ОКОГУ:</b> 4210014</p>
+							<p<b>Юр. дрес:</b> 127273, г. Москва, ул. Березовая аллея, д.12 А</p>
 						</li>
-
 						<li>
-							<a class="acardion-btn" href="#">В какие регионы России осуществляется доставка техники?</a>
-							<div>
-								<p>
-									Доставка техники осуществляется по всей России в любой населенный пункт. При этом у нас действует акция по бесплатной доставке квадроциклов и снегоходов до двери в пределах 300км от МКАД. При покупке мотоциклов и скутеров бесплатная доставка по Москве в пределах МКАД, далее 28 руб/км.
-								</p>
-							</div>
+							<p><b>Банк:</b> Московский филиал ОАО Банк «ККБ»</p>
+							<p><b>Р/с:</b> 40702810000010000093</p>
+							<p><b>Корреспондентский счет:</b> 30101810300000000122</p>
+							<p><b>БИК:</b> 044599122</p>
 						</li>
-
 						<li>
-							<a class="acardion-btn" href="#">Можно ли купить технику с уже установленными аксессуарами?</a>
-							<div>
-								<p>
-									Доставка техники осуществляется по всей России в любой населенный пункт. При этом у нас действует акция по бесплатной доставке квадроциклов и снегоходов до двери в пределах 300км от МКАД. При покупке мотоциклов и скутеров бесплатная доставка по Москве в пределах МКАД, далее 28 руб/км.
-								</p>
-							</div>
-						</li>
-
-						<li>
-							<a class="acardion-btn" href="#">Какая гарантия предоставляется на технику?</a>
-							<div>
-								<p>
-									Доставка техники осуществляется по всей России в любой населенный пункт. При этом у нас действует акция по бесплатной доставке квадроциклов и снегоходов до двери в пределах 300км от МКАД. При покупке мотоциклов и скутеров бесплатная доставка по Москве в пределах МКАД, далее 28 руб/км.
-								</p>
-							</div>
-						</li>
-
-						<li>
-							<a class="acardion-btn" href="#">Сколько стоит доставка до моего города?</a>
-							<div>
-								<p>
-									Доставка техники осуществляется по всей России в любой населенный пункт. При этом у нас действует акция по бесплатной доставке квадроциклов и снегоходов до двери в пределах 300км от МКАД. При покупке мотоциклов и скутеров бесплатная доставка по Москве в пределах МКАД, далее 28 руб/км.
-								</p>
-							</div>
+							<p><b>Банк:</b> ОАО «АЛЬФА-БАНК»</p>
+							<p><b>Р/с:</b> 40702810502640000235</p>
+							<p><b>Корреспондентский счет:</b> 30101810200000000593</p>
+							<p><b>БИК:</b> 044525593</p>
 						</li>
 					</ul>
 				</div>
+				<ul class="adress-block">
+					<li>
+						<h3 class="third-title">Сервисный центр</h3>
+						<img class="f-right" src="img/pic-39.png" alt="">
+						<div class="text-block">
+							<p><b>Адрес:</b><br/>Московская область,  г. Фрязино,<br/>Окружной Проезд 12А</p>
+							<p><b>Телефон:</b><br/>(495) 646-49-45</p>
+							<p><b>E-mail:</b><br/> Service@buggy-motor.ru</p>
+						</div>
+					</li>
+					<li>
+						<h3 class="third-title">Офис</h3>
+						<img class="f-right" src="img/pic-40.png" alt="">
+						<div class="text-block">
+							<p>Предложения по сотрудничеству и заявкина дилерство присылайте на e-mail:<br/><span>Opt@Buggy-Motor.ru</span></p>
+							<p><b>Адрес:</b><br/>Москва Варшавское шоссе д. 42</p>
+						</div>
+					</li>
+				</ul>
+				<div class="map-block">
+					<h3 class="third-title">Схема проезда</h3>
+
+					<div id="map"></div>
+				</div>
 
 				<div class="ordering">
-					<h3 class="third-title ">Задать свой вопрос</h3>
+					<h3 class="third-title ">Обратная связь</h3>
 
 					<form class="clearfix">
 						<div class="f-left">
@@ -293,83 +402,29 @@
 							</div>
 
 							<div class="row">
-								<input type="text" placeholder="E-mail" />
+								<input type="text" placeholder="Телефон" />
 							</div>
 
 							<div class="row">
-								<input type="text" placeholder="Сайт" />
+								<input type="text" placeholder="E-mail" />
 							</div>
 						</div>
 						<div class="f-right">
 							<div class="row">
 								<textarea placeholder="Текст сообщения"></textarea>
 							</div>
-							<div class="row">
+							<div class="row massage">
 								<!-- <input class="yellow-btn order-btn" type="submit" value="отправить" /> --> 
 								<!-- эту кнопку сделал через sabmit но по клину на нее перезагружаеться страница и не видно попап который  должен быть при отправке даных, для этогосделал ссылку тоже чтоб визуально показать попап, но используй инпут там все сделано для это-->
 								<a class="yellow-btn popup-btn" href="#processed-order">отправить</a>
-								<p class="hint"><span>*</span> - <i>поля, обязательные для заполнения</i></p>
+								<p class="hint">Все поля обязательны для заполнения</p>
+								<div class="massage-block">
+									<p class="hint">Ваше сообщение успешно отправлено! Менеджер ответит вам в ближайшее время.</p>
+									<a class="close" href="#"></a>
+								</div>
 							</div>
 						</div>
 					</form>
-				</div>
-
-				<div class="coments-block">
-					<h3 class="third-title ">Комментарии</h3>
-
-					<ul>
-						<li>
-							<div class="img-block">
-								<img src="img/pic-33.png" alt="">
-							</div>
-							<div class="text-block">
-								<h4 class="name">Сергей</h4>
-								<span class="day">01.09.2014</span>
-								<p>Как быть с размером одежды? Вдруг не подойдет?</p>
-							</div>
-
-							<ul>
-								<li>
-									<div class="img-block">
-										<img src="img/pic-33.png" alt="">
-									</div>
-									<div class="text-block">
-										<h4 class="name">Юрий</h4>
-										<span class="day">01.09.2014</span>
-										<p>Андрей, добрый день!</p>
-										<p>Костюмы идут размер в размер. Подобрать Вы можете по своим меркам повседневной одежды.</p>
-									</div>
-								</li>
-							</ul>
-						</li>
-
-						<li>
-							<div class="img-block">
-								<img src="img/pic-33.png" alt="">
-							</div>
-							<div class="text-block">
-								<h4 class="name">Сергей</h4>
-								<span class="day">01.09.2014</span>
-								<p>Как быть с размером одежды? Вдруг не подойдет?</p>
-							</div>
-
-							<ul>
-
-								<li>
-									<div class="img-block">
-										<img src="img/pic-33.png" alt="">
-									</div>
-									<div class="text-block">
-										<h4 class="name">Юрий</h4>
-										<span class="day">01.09.2014</span>
-										<p>Андрей, добрый день!</p>
-										<p>Костюмы идут размер в размер. Подобрать Вы можете по своим меркам повседневной одежды.</p>
-									</div>
-								</li>
-								
-							</ul>
-						</li>
-					</ul>
 				</div>
 			</section>
 		</div>
@@ -500,6 +555,13 @@
 		<script src="js/vendor/jquery.formstyler.min.js"></script>
 		<script src="js/main.js"></script>
 
+		<script type="text/javascript">
+			$(document).ready(function(){
+				/* -- form styler -- */
+
+				$('input, select').styler(); 
+			});
+		</script>
 	</body>
 </html>
 
