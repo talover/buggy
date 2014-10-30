@@ -3430,6 +3430,7 @@ ul li {
   font-style: italic;
   font-size: 9pt;
   padding-top: 10px;
+  color: #222c2c;
 }
 .ordering form .row .hint i {
   color: #000;
@@ -3865,6 +3866,86 @@ ul li {
 #services .service ul li div p {
   color: #000;
   margin-top: 12px;
+}
+#credit .main-title {
+  text-align: left;
+  padding-bottom: 22px;
+}
+#credit p {
+  font-size: 10.5pt;
+  color: #848484;
+  margin: 0;
+  padding-bottom: 18px;
+}
+#credit .available-banks {
+  padding: 38px 0;
+  margin-top: 18px;
+  border-top: 1px solid #d7d8d8;
+  border-bottom: 1px solid #d7d8d8;
+  -webkit-box-shadow: inset 0 2px 0 0 #e2e2e2, inset 0 -2px 0 0 #e2e2e2;
+  -moz-box-shadow: inset 0 2px 0 0 #e2e2e2, inset 0 -2px 0 0 #e2e2e2;
+  box-shadow: inset 0 2px 0 0 #e2e2e2, inset 0 -2px 0 0 #e2e2e2;
+}
+#credit .available-banks ul {
+  padding-top: 18px;
+}
+#credit .available-banks ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 28px;
+}
+#credit .available-banks ul li img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+#credit .available-banks ul li div {
+  display: inline-block;
+  vertical-align: top;
+}
+#credit .available-banks ul li div p {
+  color: #262f2f;
+  padding: 14px 0 0 0;
+}
+#credit .available-banks ul li div a {
+  color: #f08303;
+  text-decoration: none;
+  font-size: 10.5pt;
+}
+#credit .available-banks ul li div a:hover span {
+  border: 0;
+}
+#credit .available-banks ul li div a span {
+  border-bottom: 1px dashed #f8ceb0;
+}
+#credit .available-banks ul li div a i {
+  background-image: url("images/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: -144px -208px;
+  width: 12px;
+  height: 7px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 7px 0 0 5px;
+}
+#credit .ordering i {
+  font-size: 9pt;
+  line-height: 1.45;
+  display: block;
+  padding: 13px 0 10px 0;
+}
+#credit .ordering .hint {
+  color: #222c2c;
+}
+#credit .ordering ul li label {
+  color: #222c2c;
+}
+#credit .ordering ul li label img {
+  margin-right: 5px;
+}
+#credit .ordering .row textarea {
+  font-size: 10pt;
 }
 @media (max-width: 1150px) {
   #main-slider .owl-controls .owl-buttons div.owl-prev {
