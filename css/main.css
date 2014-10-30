@@ -3772,6 +3772,100 @@ ul li {
   border-radius: 20px;
   font-family: Arial;
 }
+#services .main-title {
+  text-align: left;
+  padding-bottom: 22px;
+}
+#services p {
+  margin: 0;
+  color: #848484;
+  font-size: 10.5pt;
+}
+#services .service {
+  border-top: 1px solid #d7d8d8;
+  -webkit-box-shadow: inset 0 2px 0 0 #e2e2e2;
+  -moz-box-shadow: inset 0 2px 0 0 #e2e2e2;
+  box-shadow: inset 0 2px 0 0 #e2e2e2;
+  margin-top: 36px;
+  padding: 42px 0 30px 0;
+  overflow: hidden;
+}
+#services .service ul {
+  overflow: hidden;
+}
+#services .service ul:first-child {
+  margin-bottom: 55px;
+}
+#services .service ul:first-child + * {
+  margin-bottom: 35px;
+}
+#services .service ul li {
+  width: 50%;
+  overflow: hidden;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#services .service ul li:first-child {
+  padding-right: 50px;
+}
+#services .service ul li:first-child + * {
+  padding-left: 50px;
+}
+#services .service ul li i {
+  background-image: url("images/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#services .service ul li i.tuning {
+  background-position: -289px -278px;
+  width: 45px;
+  height: 36px;
+}
+#services .service ul li i.repair {
+  background-position: -356px -56px;
+  width: 41px;
+  height: 41px;
+}
+#services .service ul li i.credit {
+  background-position: -407px -69px;
+  width: 45px;
+  height: 34px;
+}
+#services .service ul li i.trade-in {
+  background-position: -404px -113px;
+  width: 41px;
+  height: 41px;
+}
+#services .service ul li div {
+  display: block;
+  margin: 9px 0px 0px 62px;
+}
+#services .service ul li div h3 {
+  font-family: 'UniSansHeavyCaps';
+  color: #fe9600;
+  margin: 0;
+  padding: 15px 0 12px 0;
+  letter-spacing: 0.9px;
+  font-size: 10pt;
+  line-height: 1.4;
+  line-height: 1.6;
+  padding: 0;
+}
+#services .service ul li div h3 a {
+  color: #fe9600;
+}
+#services .service ul li div h3 a:hover {
+  text-decoration: none;
+}
+#services .service ul li div p {
+  color: #000;
+  margin-top: 12px;
+}
 @media (max-width: 1150px) {
   #main-slider .owl-controls .owl-buttons div.owl-prev {
     left: -10px;
