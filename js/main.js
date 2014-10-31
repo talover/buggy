@@ -174,5 +174,12 @@ $(document).ready(function(){
 		e.preventDefault();
 		$(this).parents('.massage-block').fadeOut();
 	});
+
+	/* -- more-advantages --*/
+
+	$('.more-advantages').click(function(e){
+		e.preventDefault();
+		$(this).toggleClass('active').siblings('.dropdown').slideToggle();
+	});
 });
 

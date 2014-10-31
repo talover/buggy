@@ -494,6 +494,11 @@ ul li {
   width: 21px;
   height: 24px;
 }
+.sprite-76 {
+  background-position: -435px -164px;
+  width: 17px;
+  height: 10px;
+}
 .sprite-8 {
   background-position: -409px -198px;
   width: 29px;
@@ -571,6 +576,22 @@ ul li {
   padding: 49px 0 20px 0;
   margin: 0;
   letter-spacing: 0.65px;
+}
+.four-title {
+  font-family: 'UniSansHeavyCaps';
+  font-size: 12pt;
+  color: #262f2f;
+  margin: 0;
+  letter-spacing: 0.5px;
+  padding-bottom: 15px;
+}
+.five-title {
+  font-family: 'UniSansHeavyCaps';
+  font-size: 10pt;
+  color: #626262;
+  margin: 0;
+  letter-spacing: 1px;
+  padding: 10px 0 20px 0;
 }
 #header .contacts {
   height: 65px;
@@ -1426,7 +1447,11 @@ ul li {
   font-size: 13pt;
   letter-spacing: 0.9px;
 }
-.article-block article .info-orange {
+.article-block article .full-img {
+  width: 100%;
+  padding-bottom: 23px;
+}
+.info-orange {
   background: #fe9600;
   padding: 17px 20px;
   font-family: 'UniSansHeavyCapsItalic';
@@ -1436,10 +1461,6 @@ ul li {
   letter-spacing: 0.8px;
   line-height: 1.4;
   margin-bottom: 16px;
-}
-.article-block article .full-img {
-  width: 100%;
-  padding-bottom: 23px;
 }
 #news-block {
   border-top: 1px solid #d7d8d8;
@@ -4339,14 +4360,14 @@ ul li {
   list-style-position: inside;
   line-height: 1.8;
 }
-#examples-tunings .examples-tunings {
+.list-pic {
   overflow: hidden;
   padding-top: 11px;
 }
-#examples-tunings .examples-tunings ul {
+.list-pic ul {
   margin: 0 -13px;
 }
-#examples-tunings .examples-tunings ul li {
+.list-pic ul li {
   width: 25%;
   float: left;
   -webkit-box-sizing: border-box;
@@ -4357,20 +4378,20 @@ ul li {
   padding: 0 13px;
   margin-bottom: 26px;
 }
-#examples-tunings .examples-tunings ul li a {
+.list-pic ul li a {
   height: 163px;
   overflow: hidden;
   position: relative;
   display: block;
 }
-#examples-tunings .examples-tunings ul li a:hover span {
+.list-pic ul li a:hover span {
   opacity: 1;
   filter: alpha(opacity=100);
 }
-#examples-tunings .examples-tunings ul li a img {
+.list-pic ul li a img {
   min-width: 100%;
 }
-#examples-tunings .examples-tunings ul li a span {
+.list-pic ul li a span {
   position: absolute;
   display: block;
   top: 0;
@@ -4389,7 +4410,7 @@ ul li {
   -o-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
-#examples-tunings .examples-tunings ul li a span i {
+.list-pic ul li a span i {
   background-image: url("images/spritesheet.png");
   background-repeat: no-repeat;
   display: block;
@@ -4402,6 +4423,227 @@ ul li {
   bottom: 0;
   right: 0;
   margin: auto;
+}
+.text-page {
+  padding-bottom: 40px;
+}
+.text-page .main-title {
+  text-align: left;
+  padding-bottom: 17px;
+}
+.text-page p,
+.text-page ol {
+  font-size: 10.5pt;
+  margin: 0;
+  color: #848484;
+  padding-bottom: 18px;
+}
+.text-page p a,
+.text-page ol a {
+  color: #fe9600;
+}
+.text-page p a:hover,
+.text-page ol a:hover {
+  text-decoration: none;
+}
+.text-page p.for-pic,
+.text-page ol.for-pic {
+  overflow: hidden;
+}
+.text-page p.for-pic span,
+.text-page ol.for-pic span {
+  display: block;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.text-page p.for-pic .f-left,
+.text-page ol.for-pic .f-left {
+  padding-right: 10px;
+}
+.text-page p.for-pic .f-right,
+.text-page ol.for-pic .f-right {
+  padding-left: 10px;
+}
+.text-page p.without-padding,
+.text-page ol.without-padding {
+  padding: 0;
+}
+.text-page ol {
+  padding-left: 0;
+  list-style-position: inside;
+  line-height: 1.8;
+}
+.text-page img.full {
+  width: 100%;
+}
+.text-page .second-title {
+  padding: 35px 0 20px 0;
+}
+.text-page .third-title {
+  padding: 56px 0 20px 0;
+  letter-spacing: 1px;
+}
+.advantages {
+  overflow: hidden;
+  padding-bottom: 2px;
+}
+.advantages ul {
+  overflow: hidden;
+  margin: 0 -16px;
+  margin-top: 7px;
+}
+.advantages ul.dropdown {
+  display: none;
+}
+.advantages ul li {
+  float: left;
+  width: 20%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 16px;
+  margin-bottom: 20px;
+}
+.advantages ul li .cont {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 168px;
+  border: 3px solid #fe9600;
+  padding-top: 37px;
+}
+.advantages ul li .cont .ico-block {
+  height: 54px;
+}
+.advantages ul li .cont .ico-block i {
+  background-image: url("images/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+  margin: auto;
+}
+.advantages ul li .cont p {
+  color: #222c2c;
+  text-align: center;
+  padding: 0;
+}
+.advantages .more-advantages {
+  text-align: center;
+  display: block;
+  width: 168px;
+  margin: auto;
+}
+.advantages .more-advantages .up {
+  display: none;
+}
+.advantages .more-advantages .down {
+  display: inline-block;
+}
+.advantages .more-advantages i {
+  background-image: url("images/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+  display: inline-block;
+  vertical-align: top;
+  background-position: -117px -278px;
+  width: 17px;
+  height: 10px;
+  margin: 10px 0 0 10px;
+}
+.advantages .more-advantages.active .up {
+  display: inline-block;
+}
+.advantages .more-advantages.active .down {
+  display: none;
+}
+.advantages .more-advantages.active i {
+  background-position: -435px -164px;
+  width: 17px;
+  height: 10px;
+}
+.person-list {
+  padding-top: 6px;
+  padding-bottom: 15px;
+}
+.person-list ul {
+  overflow: hidden;
+  margin: 0 -15px;
+}
+.person-list ul li {
+  float: left;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.person-list ul li .cont {
+  border: 3px solid #fe9600;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 260px;
+  text-align: center;
+}
+.person-list ul li .cont .img-block {
+  position: relative;
+  height: 152px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 22px;
+}
+.person-list ul li .cont .img-block:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(images/img-mask.png) no-repeat center top;
+  height: 152px;
+  width: 100%;
+  content: "";
+}
+.person-list ul li .cont h3 {
+  font-family: 'UniSansHeavyCaps';
+  color: #222c2c;
+  margin: 0;
+  font-size: 10pt;
+  letter-spacing: 0.5px;
+  padding: 22px 0 0 0;
+}
+.orange-table {
+  border-bottom: 2px solid #fe9600;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.orange-table thead tr th {
+  font-family: 'UniSansHeavyCaps';
+  color: #fff;
+  height: 36px;
+  background: #fe9600;
+  font-size: 10.5pt;
+}
+.orange-table tbody tr:nth-child(even) td {
+  background: #efefef;
+  color: #222c2c;
+}
+.orange-table tbody tr td {
+  color: #848484;
+  font-size: 10.5pt;
+  text-align: center;
+  padding: 9px 0;
+}
+.orange-table tbody tr td:first-child {
+  width: 45px;
 }
 @media (max-width: 1150px) {
   #main-slider .owl-controls .owl-buttons div.owl-prev {

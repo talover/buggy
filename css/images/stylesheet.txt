@@ -300,6 +300,10 @@
         .stitches-sprite(-404px, -164px, 21px, 24px);
     }
 
+    &.sprite-76 {
+        .stitches-sprite(-435px, -164px, 17px, 10px);
+    }
+
     &.sprite-8 {
         .stitches-sprite(-409px, -198px, 29px, 27px);
     }
