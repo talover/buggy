@@ -2625,6 +2625,23 @@ ul {
     .row {
         margin-bottom: 20px;
 
+        &.tel {
+            position: relative;
+
+            &:after {
+                position: absolute;
+                .sprite;
+                .sprite-74;
+                content: "";
+                top: 7px;
+                left: 10px;
+            }
+
+            input[type="text"] {
+                text-indent: 20px;
+            }
+        }
+
         input[type="text"],textarea  {
             width: 100%;
             border:2px solid #e2e2e2;
@@ -4679,7 +4696,7 @@ ul {
 }
 .text-page {
     padding-bottom: 40px;
-    
+
     .main-title {
         text-align: left;
         padding-bottom: 17px;
@@ -4910,6 +4927,18 @@ ul {
                 }
             }
         }
+    }
+}
+
+#Callback {
+    display: none;
+    width: 348px;
+
+    p {
+        font-size: 10.5pt;
+        color: @main-color;
+        margin: 0;
+        padding-bottom: 15px;
     }
 }
 /* -- media --*/

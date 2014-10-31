@@ -2492,6 +2492,24 @@ ul li {
 .popup .row {
   margin-bottom: 20px;
 }
+.popup .row.tel {
+  position: relative;
+}
+.popup .row.tel:after {
+  position: absolute;
+  background-image: url("images/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: -455px -113px;
+  width: 7px;
+  height: 13px;
+  content: "";
+  top: 7px;
+  left: 10px;
+}
+.popup .row.tel input[type="text"] {
+  text-indent: 20px;
+}
 .popup .row input[type="text"],
 .popup .row textarea {
   width: 100%;
@@ -4644,6 +4662,16 @@ ul li {
 }
 .orange-table tbody tr td:first-child {
   width: 45px;
+}
+#Callback {
+  display: none;
+  width: 348px;
+}
+#Callback p {
+  font-size: 10.5pt;
+  color: #222c2c;
+  margin: 0;
+  padding-bottom: 15px;
 }
 @media (max-width: 1150px) {
   #main-slider .owl-controls .owl-buttons div.owl-prev {
