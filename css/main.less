@@ -3329,6 +3329,32 @@ ul {
         .row {
             padding-bottom: 20px;
 
+            &.massage {
+                position: relative;
+
+                .massage-block {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: #fff;
+                    min-height: 40px;
+                    width: 300px;
+
+                    .hint {
+                        margin: 0;
+                        padding: 0 30px 0 0;
+                        text-align: left;
+                    }
+
+                    .close {
+                        position: absolute;
+                        top: 3px;
+                        right: 5px;
+                        .sprite;
+                        .sprite-42;
+                    }
+                }
+            }
 
             input[type="text"],textarea  {
                 width: 100%;
@@ -4080,6 +4106,233 @@ ul {
             background: #fe9600;
             content: "";
             margin: 8px 8px 0 5px;
+        }
+    }
+}
+
+#trade-in {
+    .main-title {
+        text-align: left;
+        padding-bottom: 22px;
+    }
+
+    p {
+        font-size: 10.5pt;
+        margin:0;
+        color: #848484;
+        padding-bottom: 18px;
+    }
+
+    .trade-in-list {
+        overflow: hidden;
+        margin: 18px 0 0 0;
+
+        ul {
+            margin:  0 -12px;
+
+            li {
+                padding: 0 12px;
+                .box-sizing(border-box);
+                width: 25%;
+                float: left;
+
+                .cont {
+                    border:3px solid #fe9600;
+                    .box-sizing(border-box);
+                    height: 224px;
+
+                    .ico-block {
+                        height: 114px;
+                        .box-sizing(border-box);
+                        padding-top: 53px;
+
+                        i {
+                            .sprite;
+                            margin: auto;
+                        }
+                    }
+                }
+
+                p {
+                    padding: 0;
+                    text-align: center;
+                    color: @main-color;
+                }
+            }
+        }
+    }
+
+    .ordering {
+        border-top: 1px solid #d7d8d8;
+        -webkit-box-shadow: inset 0 2px 0 0 #e2e2e2;
+        -moz-box-shadow: inset 0 2px 0 0 #e2e2e2;
+        box-shadow: inset 0 2px 0 0 #e2e2e2;
+        margin-top: 40px;
+        padding-top: 33px;
+
+        form {
+            padding-left: 13px;
+            padding-right: 13px;
+            
+            .f-left {
+                width: 33.3%;
+                padding: 0 13px;
+
+                .row {
+                    textarea {
+                        font-size: 10pt;
+                    }
+
+                    .yellow-btn {
+                        float: right;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+#tuning {
+    .main-title {
+        text-align: left;
+        padding-bottom: 22px;
+    } 
+
+    p {
+        font-size: 10.5pt;
+        margin:0;
+        color: #848484;
+        padding-bottom: 18px;
+    }
+
+    .order-tuning {
+        border-top: 1px solid #d7d8d8;
+        -webkit-box-shadow: inset 0 2px 0 0 #e2e2e2;
+        -moz-box-shadow:    inset 0 2px 0 0 #e2e2e2;
+        box-shadow:         inset 0 2px 0 0 #e2e2e2;
+        margin-top: 17px;
+        padding: 38px 0 33px 0;
+
+        .third-title {
+            padding-bottom: 16px;
+        }
+
+        .f-left , 
+        .f-right {
+            .box-sizing(border-box);
+            width: 50%;
+        }
+        .f-left {
+            padding-right: 15px;
+        }
+        .f-right {
+            padding-left: 15px;
+        }
+
+        h4 {
+            font-family:@bold-font;
+            font-size: 10pt;
+            color: #626262;
+            margin: 0;
+            letter-spacing: 0.77px;
+            padding: 11px 0 22px 0;
+        }
+
+        table {
+            border-top:2px solid #fe9908;
+            border-bottom:2px solid #fe9908;
+            width: 100%;
+
+            tr {
+                &:nth-child(even) {
+                    td {
+                        background: #efefef;
+                        color: @main-color;
+                    }
+                }
+
+                td {
+                    color: #848484;
+                    font-size: 10.5pt;
+                    padding: 9px 0;
+
+                    &:first-child {
+                        padding-left: 62px;
+                        width: 285px;
+                    }
+
+                    span {
+                        font-family: @rubl-font;
+                    }
+                }
+            }
+        }
+    }
+
+    .ordering {
+        padding: 0;
+
+        form {
+            margin: 0;
+
+            .hint {
+                font-size: 9pt;
+                color: @main-color;
+            }
+        }
+    }
+}
+
+#examples-tunings {
+    border-top: 1px solid #d7d8d8;
+    border-bottom: 1px solid #d7d8d8;
+    -webkit-box-shadow: 0px 0px 0px 2px #e2e2e2;
+    -moz-box-shadow:    0px 0px 0px 2px #e2e2e2;
+    box-shadow:         0px 0px 0px 2px #e2e2e2;
+    height: 448px;
+    margin-top: 28px;
+    background: url("@{path}examples-tunings.png") center top no-repeat;
+    background-size: cover;
+    margin-bottom: 2px;
+
+    .main-container {width: 1000px;}
+
+    .second-title {
+        text-align: center;
+        padding: 50px 0 43px 0;
+    }
+
+    ul {
+        overflow: hidden;
+
+        li {
+            width: 25%;
+            float: left;
+            .box-sizing(border-box);
+            padding: 0 10px;
+
+            .img-block {
+                overflow: hidden;
+                height: 267px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+                .orange-title {
+                    position: absolute;
+                    bottom: 20px;
+                    left:0;
+                    padding: 20px;
+                    .box-sizing(border-box);
+                }
+            }
+
+            .yellow-btn {
+                margin: 15px 0 2px 0;
+            }
         }
     }
 }
